@@ -1,0 +1,193 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Length 2844 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 48 738 Tm (from math import acos, degrees, sqrt) Tj
+1 0 0 1 48 726 Tm (from pathlib import Path) Tj
+1 0 0 1 48 714 Tm () Tj
+1 0 0 1 48 702 Tm (from build123d import \() Tj
+1 0 0 1 48 690 Tm (    BuildLine,) Tj
+1 0 0 1 48 678 Tm (    BuildPart,) Tj
+1 0 0 1 48 666 Tm (    BuildSketch,) Tj
+1 0 0 1 48 654 Tm (    CenterArc,) Tj
+1 0 0 1 48 642 Tm (    Circle,) Tj
+1 0 0 1 48 630 Tm (    Line,) Tj
+1 0 0 1 48 618 Tm (    Locations,) Tj
+1 0 0 1 48 606 Tm (    Mode,) Tj
+1 0 0 1 48 594 Tm (    Plane,) Tj
+1 0 0 1 48 582 Tm (    RectangleRounded,) Tj
+1 0 0 1 48 570 Tm (    RegularPolygon,) Tj
+1 0 0 1 48 558 Tm (    add,) Tj
+1 0 0 1 48 546 Tm (    export_step,) Tj
+1 0 0 1 48 534 Tm (    export_stl,) Tj
+1 0 0 1 48 522 Tm (    extrude,) Tj
+1 0 0 1 48 510 Tm (    make_face,) Tj
+1 0 0 1 48 498 Tm (\)) Tj
+1 0 0 1 48 486 Tm () Tj
+1 0 0 1 48 474 Tm () Tj
+1 0 0 1 48 462 Tm (PLATE_WIDTH = 730.0) Tj
+1 0 0 1 48 450 Tm (PLATE_HEIGHT = 1130.0) Tj
+1 0 0 1 48 438 Tm (PLATE_THICKNESS = 30.0) Tj
+1 0 0 1 48 426 Tm (OUTER_CORNER_RADIUS = 70.0) Tj
+1 0 0 1 48 414 Tm () Tj
+1 0 0 1 48 402 Tm (HEX_ACROSS_FLATS = 60.0) Tj
+1 0 0 1 48 390 Tm (HEX_SIDE_LENGTH = 34.64) Tj
+1 0 0 1 48 378 Tm () Tj
+1 0 0 1 48 366 Tm (TOP_HEX_CENTERS = [\(-295.0, 495.0\), \(295.0, 495.0\)]) Tj
+1 0 0 1 48 354 Tm (LOWER_HEX_CENTERS = [\(-295.0, -345.0\), \(295.0, -345.0\)]) Tj
+1 0 0 1 48 342 Tm () Tj
+1 0 0 1 48 330 Tm (KEYHOLE_X_POSITIONS = [-225.0, 0.0, 225.0]) Tj
+1 0 0 1 48 318 Tm (KEYHOLE_TOP_CENTER_Y = -225.0) Tj
+1 0 0 1 48 306 Tm (KEYHOLE_TOP_RADIUS = 37.5) Tj
+1 0 0 1 48 294 Tm (KEYHOLE_NECK_WIDTH = 35.0) Tj
+1 0 0 1 48 282 Tm (KEYHOLE_NECK_STRAIGHT = 21.27) Tj
+1 0 0 1 48 270 Tm (KEYHOLE_BOTTOM_RADIUS = 17.5) Tj
+1 0 0 1 48 258 Tm (KEYHOLE_BLEND_RADIUS = 10.0) Tj
+1 0 0 1 48 246 Tm () Tj
+1 0 0 1 48 234 Tm (BOTTOM_HOLE_DIAMETER = 50.0) Tj
+1 0 0 1 48 222 Tm (BOTTOM_HOLE_CENTERS = [\(-225.0, -490.0\), \(0.0, -490.0\), \(225.0, -490.0\)]) Tj
+1 0 0 1 48 210 Tm () Tj
+1 0 0 1 48 198 Tm () Tj
+1 0 0 1 48 186 Tm (def _keyhole_profile\(\):) Tj
+1 0 0 1 48 174 Tm (    """Build a single keyhole profile centered on the top circular head.""") Tj
+1 0 0 1 48 162 Tm (    neck_half_width = KEYHOLE_NECK_WIDTH / 2) Tj
+1 0 0 1 48 150 Tm (    fillet_center_x = neck_half_width + KEYHOLE_BLEND_RADIUS) Tj
+1 0 0 1 48 138 Tm (    fillet_center_y = -sqrt\() Tj
+1 0 0 1 48 126 Tm (        \(KEYHOLE_TOP_RADIUS + KEYHOLE_BLEND_RADIUS\) ** 2 - fillet_center_x**2) Tj
+1 0 0 1 48 114 Tm (    \)) Tj
+1 0 0 1 48 102 Tm (    bottom_top_line_y = fillet_center_y - KEYHOLE_NECK_STRAIGHT) Tj
+1 0 0 1 48 90 Tm (    top_tangent_scale = KEYHOLE_TOP_RADIUS / \(KEYHOLE_TOP_RADIUS + KEYHOLE_BLEND_RADIUS\)) Tj
+1 0 0 1 48 78 Tm (    top_tangent_x = fillet_center_x * top_tangent_scale) Tj
+1 0 0 1 48 66 Tm (    top_tangent_angle = degrees\(acos\(top_tangent_x / KEYHOLE_TOP_RADIUS\)\)) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 3315 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 48 738 Tm () Tj
+1 0 0 1 48 726 Tm (    with BuildSketch\(\) as profile:) Tj
+1 0 0 1 48 714 Tm (        with BuildLine\(\):) Tj
+1 0 0 1 48 702 Tm (            CenterArc\() Tj
+1 0 0 1 48 690 Tm (                center=\(0, 0\),) Tj
+1 0 0 1 48 678 Tm (                radius=KEYHOLE_TOP_RADIUS,) Tj
+1 0 0 1 48 666 Tm (                start_angle=360 - top_tangent_angle,) Tj
+1 0 0 1 48 654 Tm (                arc_size=180 + 2 * top_tangent_angle,) Tj
+1 0 0 1 48 642 Tm (            \)) Tj
+1 0 0 1 48 630 Tm (            CenterArc\() Tj
+1 0 0 1 48 618 Tm (                center=\(-fillet_center_x, fillet_center_y\),) Tj
+1 0 0 1 48 606 Tm (                radius=KEYHOLE_BLEND_RADIUS,) Tj
+1 0 0 1 48 594 Tm (                start_angle=top_tangent_angle,) Tj
+1 0 0 1 48 582 Tm (                arc_size=-top_tangent_angle,) Tj
+1 0 0 1 48 570 Tm (            \)) Tj
+1 0 0 1 48 558 Tm (            Line\(\(-neck_half_width, fillet_center_y\), \(-neck_half_width, bottom_top_line) Tj
+1 0 0 1 48 546 Tm (_y\)\)) Tj
+1 0 0 1 48 534 Tm (            CenterArc\() Tj
+1 0 0 1 48 522 Tm (                center=\(0, bottom_top_line_y\),) Tj
+1 0 0 1 48 510 Tm (                radius=KEYHOLE_BOTTOM_RADIUS,) Tj
+1 0 0 1 48 498 Tm (                start_angle=180,) Tj
+1 0 0 1 48 486 Tm (                arc_size=180,) Tj
+1 0 0 1 48 474 Tm (            \)) Tj
+1 0 0 1 48 462 Tm (            Line\(\(neck_half_width, bottom_top_line_y\), \(neck_half_width, fillet_center_y) Tj
+1 0 0 1 48 450 Tm (\)\)) Tj
+1 0 0 1 48 438 Tm (            CenterArc\() Tj
+1 0 0 1 48 426 Tm (                center=\(fillet_center_x, fillet_center_y\),) Tj
+1 0 0 1 48 414 Tm (                radius=KEYHOLE_BLEND_RADIUS,) Tj
+1 0 0 1 48 402 Tm (                start_angle=180,) Tj
+1 0 0 1 48 390 Tm (                arc_size=-top_tangent_angle,) Tj
+1 0 0 1 48 378 Tm (            \)) Tj
+1 0 0 1 48 366 Tm (        make_face\(\)) Tj
+1 0 0 1 48 354 Tm () Tj
+1 0 0 1 48 342 Tm (    return profile.sketch) Tj
+1 0 0 1 48 330 Tm () Tj
+1 0 0 1 48 318 Tm () Tj
+1 0 0 1 48 306 Tm (def build_plate\(\):) Tj
+1 0 0 1 48 294 Tm (    with BuildPart\(\) as part:) Tj
+1 0 0 1 48 282 Tm (        with BuildSketch\(Plane.XY\):) Tj
+1 0 0 1 48 270 Tm (            RectangleRounded\(PLATE_WIDTH, PLATE_HEIGHT, OUTER_CORNER_RADIUS\)) Tj
+1 0 0 1 48 258 Tm () Tj
+1 0 0 1 48 246 Tm (            for center in TOP_HEX_CENTERS:) Tj
+1 0 0 1 48 234 Tm (                with Locations\(center\):) Tj
+1 0 0 1 48 222 Tm (                    RegularPolygon\(radius=HEX_SIDE_LENGTH, side_count=6, mode=Mode.SUBTR) Tj
+1 0 0 1 48 210 Tm (ACT\)) Tj
+1 0 0 1 48 198 Tm () Tj
+1 0 0 1 48 186 Tm (            for center in LOWER_HEX_CENTERS:) Tj
+1 0 0 1 48 174 Tm (                with Locations\(center\):) Tj
+1 0 0 1 48 162 Tm (                    RegularPolygon\(radius=HEX_SIDE_LENGTH, side_count=6, mode=Mode.SUBTR) Tj
+1 0 0 1 48 150 Tm (ACT\)) Tj
+1 0 0 1 48 138 Tm () Tj
+1 0 0 1 48 126 Tm (            keyhole = _keyhole_profile\(\)) Tj
+1 0 0 1 48 114 Tm (            for x_pos in KEYHOLE_X_POSITIONS:) Tj
+1 0 0 1 48 102 Tm (                with Locations\(\(x_pos, KEYHOLE_TOP_CENTER_Y\)\):) Tj
+1 0 0 1 48 90 Tm (                    add\(keyhole, mode=Mode.SUBTRACT\)) Tj
+1 0 0 1 48 78 Tm () Tj
+1 0 0 1 48 66 Tm (            for center in BOTTOM_HOLE_CENTERS:) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1036 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 48 738 Tm (                with Locations\(center\):) Tj
+1 0 0 1 48 726 Tm (                    Circle\(BOTTOM_HOLE_DIAMETER / 2, mode=Mode.SUBTRACT\)) Tj
+1 0 0 1 48 714 Tm () Tj
+1 0 0 1 48 702 Tm (        extrude\(amount=PLATE_THICKNESS\)) Tj
+1 0 0 1 48 690 Tm () Tj
+1 0 0 1 48 678 Tm (    return part.part) Tj
+1 0 0 1 48 666 Tm () Tj
+1 0 0 1 48 654 Tm () Tj
+1 0 0 1 48 642 Tm (def export_model\(part, output_dir: Path\) -> None:) Tj
+1 0 0 1 48 630 Tm (    output_dir.mkdir\(parents=True, exist_ok=True\)) Tj
+1 0 0 1 48 618 Tm (    export_step\(part, output_dir / "plate_with_cutouts.step"\)) Tj
+1 0 0 1 48 606 Tm (    export_stl\(part, output_dir / "plate_with_cutouts.stl"\)) Tj
+1 0 0 1 48 594 Tm () Tj
+1 0 0 1 48 582 Tm () Tj
+1 0 0 1 48 570 Tm (if __name__ == "__main__":) Tj
+1 0 0 1 48 558 Tm (    plate = build_plate\(\)) Tj
+1 0 0 1 48 546 Tm (    export_model\(plate, Path\("exports"\)\)) Tj
+1 0 0 1 48 534 Tm (    print\("Created exports/plate_with_cutouts.step and exports/plate_with_cutouts.stl"\)) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000152 00000 n 
+0000003047 00000 n 
+0000003173 00000 n 
+0000006539 00000 n 
+0000006665 00000 n 
+0000007752 00000 n 
+0000007878 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+7927
+%%EOF
